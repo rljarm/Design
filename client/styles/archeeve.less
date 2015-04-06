@@ -4,7 +4,9 @@
    background-image: url("/assets/background2.jpg");
    background-size: cover;
    position:relative;
-   background-color: rgba(5, 5, 5, 0.8);
+  }
+  #hero-shade {
+    background-color: rgba(5, 5, 4, 0.2);
   }
   #logo {
     position: fixed;
@@ -25,6 +27,7 @@
     width: 66%;
     overflow: hidden;
     font-family: open Sans;
+    text-align: center;
   }
   #hero-content div {
     position: relative;
@@ -39,7 +42,7 @@
     margin-left:10px;
     position: relative;
     margin: 0 auto;
-    box-sizing: border-box;
+    display: inline-block;
   }
   #os > div p {
     padding-left: 40px;
@@ -47,16 +50,24 @@
     padding-top: 5px;
     color: white;
   }
+  #os *+* {
+    margin-left: 10px;
+  }
   #head {
     color: white;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-top: 100px;
     position: relative;
     margin: 0 auto;
+    display:inline-block;
+  }
+  #head > p {
+    padding-bottom: 30px;
   }
   #arche {
-    transform: translateY(100px);
+    transform: translateY(170px);
+    display: inline-block;
   }
   #arche:hover {
     transform: translateY(5px);
@@ -145,11 +156,17 @@
     background-color: #202328;
     border-radius: 10px;
   }
+  #mac > p {
+    padding-top: 8px;
+  }
   #win {
     height: 40px;
     width: 300px;
     background-color: #202328;
     border-radius: 10px;
+  }
+  #win > p {
+    padding-top: 8px;
   }
   #mac:hover {
     background-color: limegreen;
